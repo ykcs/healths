@@ -1,0 +1,127 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+if(typeof doyoo=='undefined' || !doyoo){
+var d_genId=function(){
+var id ='',ids='0123456789abcdef';
+for(var i=0;i<32;i++){ id+=ids.charAt(Math.floor(Math.random()*16)); } return id;
+};
+
+var schema='http';
+if(location.href.indexOf('https:') == 0){
+schema = 'https';
+}
+var doyoo={
+env:{
+secure:schema=='https',
+mon:schema+'://m9106.talk99.cn/monitor',
+chat:schema+'://chat2445.talk99.cn/chat',
+file:schema+'://aux.soperson.com/131221',
+compId:20002281,
+confId:10105570,
+workDomain:'',
+vId:d_genId(),
+lang:'',
+fixFlash:0,
+fixMobileScale:0,
+subComp:0,
+_mark:'788b9fee7f8b2d039e2d527cb2f5799ec32afdcc925bf7a936598d97d3cbd6033468955bc0d724b3'
+},
+chat:{
+mobileColor:'',
+mobileHeight:80,
+mobileChatHintBottom:0,
+mobileChatHintMode:0,
+mobileChatHintColor:'',
+mobileChatHintSize:0,
+priorMiniChat:0
+}
+
+
+, panelParam:{
+mobileIcon:'//file.soperson.com/probe/20002281/5cac3814edc0bae7e0bbfb54.jpg',
+mobileIconWidth:0,
+mobileIconHeight:0,
+category:'win',
+preferConfig:1,
+position:1,
+vertical:120,
+horizon:5
+
+,mode:0,
+index:4
+
+,width:190
+
+
+
+,title:'\u6559\u5e08\u8d44\u683c\u8bc1-\u5728\u7ebf\u54a8\u8be2'
+
+
+, headClr:'#FFFFFF',
+headBgClr:'#E80404',
+borderClr:'#E80404',
+phone:''
+
+
+
+,customers:{"mode":"1","groups":[{"mode":2,"phone":0,"name":"\u3010\u6559\u5e08\u8bc1\u3011\u62a5\u540d\u65f6\u95f4","sms":0,"count":0,"online":1,"active":1,"id":10082894},{"mode":2,"phone":0,"name":"\u3010\u6559\u5e08\u8bc1\u3011\u62a5\u8003\u6761\u4ef6","sms":0,"count":0,"online":1,"active":1,"id":10082895},{"mode":2,"phone":0,"name":"\u3010\u6559\u5e08\u8bc1\u3011\u8003\u8bd5\u79d1\u76ee","sms":0,"count":0,"online":1,"active":1,"id":10082896},{"mode":2,"phone":0,"name":"\u3010\u6559\u5e08\u8bc1\u3011\u5e7c\u5e08\u4ecb\u7ecd","sms":0,"count":0,"online":1,"active":1,"id":10082899},{"mode":2,"phone":0,"name":"\u3010\u6559\u5e08\u8bc1\u3011\u975e\u4e13\u4e1a\u8003\u751f","sms":0,"count":0,"online":1,"active":1,"id":10082897},{"mode":2,"phone":0,"name":"\u3010\u6559\u5e08\u8bc1\u3011\u666e\u901a\u8bdd\u8003\u8bd5","sms":0,"count":0,"online":1,"active":1,"id":10082903},{"mode":2,"phone":0,"name":"\u3010\u6559\u5e08\u8bc1\u3011\u5c0f\u5b66\u8001\u5e08\u4ecb\u7ecd","sms":0,"count":0,"online":1,"active":1,"id":10082900},{"mode":2,"phone":0,"name":"\u3010\u6559\u5e08\u8bc1\u3011\u521d\u4e2d\u8001\u5e08\u4ecb\u7ecd","sms":0,"count":0,"online":1,"active":1,"id":10082901},{"mode":2,"phone":0,"name":"\u3010\u6559\u5e08\u8bc1\u3011\u9ad8\u4e2d\u8001\u5e08\u4ecb\u7ecd","sms":0,"count":0,"online":1,"active":1,"id":10082902},{"mode":2,"phone":0,"name":"\u3010\u6559\u5e08\u8bc1\u3011\u9762\u8bd5\u8003\u8bd5\u4ecb\u7ecd","sms":0,"count":0,"online":1,"active":1,"id":10082905},{"mode":2,"phone":0,"name":"\u3010\u6559\u5e08\u8bc1\u3011\u7b14\u8bd5\u8003\u8bd5\u4ecb\u7ecd","sms":0,"count":0,"online":1,"active":1,"id":10082904},{"mode":2,"phone":0,"name":"\u3010\u6559\u5e08\u8bc1\u3011\u76f8\u5173\u4e13\u4e1a\u8003\u751f","sms":0,"count":0,"online":1,"active":1,"id":10082898}],"showRobot":0}
+
+
+
+}
+
+
+
+,sniffer:{
+ids:'js-1.jpg,js-3.jpg,js-2.jpg,js-4.jpg,js-5.jpg,js-6.jpg,js-7.jpg,js-8.jpg,js-9.jpg,js-4.09-3.jpg,js-4.09-2.jpg,js-4.09.jpg,js-229.jpg,js-4.12.jpg,js-4.12-2.jpg,js-4.12-3.jpg,js-4.12-1.jpg,js-4.16-2.jpg,js-4.16-1.jpg,js-5.08-1.jpg,js-5.17-1.jpg,js-5.29-1.jpg,js-5.30-1.jpg',
+gids:'10082115,10082115,10082115,10082115,10082115,10082115,10082115,10082115,10082115,10082117,10082117,10082117,10082903,10082905,10082905,10082905,10082905,10082905,10082905,10082904,10082902,10082901,10082896'
+}
+
+};
+
+if(typeof talk99Init == 'function'){
+talk99Init(doyoo);
+}
+if(!document.getElementById('doyoo_panel')){
+var supportJquery=typeof jQuery!='undefined';
+var doyooWrite=function(html){
+document.writeln(html);
+}
+
+doyooWrite('<div id="doyoo_panel"></div>');
+
+
+doyooWrite('<div id="doyoo_monitor"></div>');
+
+
+doyooWrite('<div id="talk99_message"></div>')
+
+doyooWrite('<div id="doyoo_share" style="display:none;"></div>');
+doyooWrite('<lin'+'k rel="stylesheet" type="text/css" href="'+schema+'://aux.soperson.com/131221/oms.css?181204"></li'+'nk>');
+doyooWrite('<scr'+'ipt type="text/javascript" src="'+schema+'://aux.soperson.com/131221/oms.js?190601" charset="utf-8"></scr'+'ipt>');
+}
+}

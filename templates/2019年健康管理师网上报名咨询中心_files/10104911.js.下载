@@ -1,0 +1,160 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+if(typeof doyoo=='undefined' || !doyoo){
+var d_genId=function(){
+var id ='',ids='0123456789abcdef';
+for(var i=0;i<32;i++){ id+=ids.charAt(Math.floor(Math.random()*16)); } return id;
+};
+
+var schema='http';
+if(location.href.indexOf('https:') == 0){
+schema = 'https';
+}
+var doyoo={
+env:{
+secure:schema=='https',
+mon:schema+'://m9100.talk99.cn/monitor',
+chat:schema+'://chat2445.talk99.cn/chat',
+file:schema+'://aux.soperson.com/131221',
+compId:20002281,
+confId:10104911,
+workDomain:'',
+vId:d_genId(),
+lang:'',
+fixFlash:0,
+fixMobileScale:0,
+subComp:0,
+_mark:'788b9fee7f8b2d032d3a934ae528b82ac32afdcc925bf7a912923c25c4ab95816e4b3fa3f6eb8073'
+},
+chat:{
+mobileColor:'',
+mobileHeight:50,
+mobileChatHintBottom:0,
+mobileChatHintMode:0,
+mobileChatHintColor:'',
+mobileChatHintSize:0,
+priorMiniChat:0
+}
+
+, monParam:{
+index:1,
+preferConfig:0,
+
+title:'',
+text:'',
+auto:-1,
+group:'10068063',
+start:'00:00',
+end:'24:00',
+mask:false,
+status:true,
+fx:0,
+mini:1,
+pos:0,
+offShow:1,
+loop:0,
+autoHide:0,
+hidePanel:0,
+miniStyle:'#0680b2',
+miniWidth:'340',
+miniHeight:'490',
+showPhone:0,
+monHideStatus:[0,0,0],
+monShowOnly:'',
+autoDirectChat:-1,
+allowMobileDirect:1,
+minBallon:0,
+chatFollow:1,
+backCloseChat:0,
+ratio:0
+}
+
+
+, panelParam:{
+mobileIcon:'',
+mobileIconWidth:0,
+mobileIconHeight:0,
+category:'win',
+preferConfig:0,
+position:1,
+vertical:120,
+horizon:5
+
+,mode:0,
+index:6
+
+,width:165
+
+
+
+,title:'\u5728\u7ebf\u54a8\u8be2\u4e2d\u5fc3'
+
+
+, headClr:'#FFFFFF',
+headBgClr:'#0C73C2',
+borderClr:'#0C73C2',
+phone:''
+
+
+
+,customers:{"mode":"1","groups":[{"mode":2,"phone":0,"name":"\u5065\u5eb7\/\u8425\u517b-\u62a5\u540d\u65f6\u95f4","sms":0,"count":0,"online":1,"active":1,"id":10083809},{"mode":2,"phone":0,"name":"\u5065\u5eb7\/\u8425\u517b-\u4e60\u9898\u4e0b\u8f7d","sms":0,"count":0,"online":1,"active":1,"id":10083818},{"mode":2,"phone":0,"name":"\u5065\u5eb7\/\u8425\u517b-\u8003\u8bd5\u65f6\u95f4","sms":0,"count":0,"online":1,"active":1,"id":10083810},{"mode":2,"phone":0,"name":"\u5065\u5eb7\/\u8425\u517b-\u62a5\u8003\u6761\u4ef6","sms":0,"count":0,"online":1,"active":1,"id":10083811},{"mode":2,"phone":0,"name":"\u5065\u5eb7\/\u8425\u517b-\u8003\u8bd5\u79d1\u76ee","sms":0,"count":0,"online":1,"active":1,"id":10083812},{"mode":2,"phone":0,"name":"\u5065\u5eb7\/\u8425\u517b-\u8003\u8bd5\u533a\u522b","sms":0,"count":0,"online":1,"active":1,"id":10083813},{"mode":2,"phone":0,"name":"\u5065\u5eb7\/\u8425\u517b-\u6b63\u89c4\u62a5\u8003","sms":0,"count":0,"online":1,"active":1,"id":10083816},{"mode":2,"phone":0,"name":"\u5065\u5eb7\/\u8425\u517b-\u8bc1\u4e66\u5bf9\u6bd4","sms":0,"count":0,"online":1,"active":1,"id":10083815},{"mode":2,"phone":0,"name":"\u5065\u5eb7\/\u8425\u517b-\u8bc1\u4e66\u4ecb\u7ecd","sms":0,"count":0,"online":1,"active":1,"id":10083814},{"mode":2,"phone":0,"name":"\u6761\u4ef6\u4e0d\u591f-\u7533\u8bf7\u4ee3\u62a5","sms":0,"count":0,"online":1,"active":1,"id":10083817}],"showRobot":0}
+
+
+
+}
+
+
+
+,sniffer:{
+ids:'jk-3.13-1.jpg,jk-3.13-2.jpg,jk-3.13-3.jpg,jk-3.13-4.jpg,jk-3.13-5.jpg,jk-3.13-6.jpg,jk-3.13-7.jpg,jk-3.13-8.jpg,jk-3.13-9.jpg,jk-3.13-10.jpg,jk-3.13-11.jpg,jk-3.13-12.jpg,jk-3.13-13.jpg,7.05-1.jpg,jk-7.5-2.jpg,left.png,kjzmianfeixue.jpg,jk-7.18-3.jpg,jk-7.18.jpg,jk-7.22.jpg,jk-23.9.jpg,jk-237.jpg,jk-23.8.jpg,jk-724.jpg,jk-725.jpg,jk-bbb.jpg',
+gids:'10082113,10082113,10082113,10082113,10082113,10082113,10082113,10082113,10082113,10082113,10082113,10082113,10082113,10082109,10083815,10083815,10083813,10083814,10083814,10083815,10083815,10083814,10083809,10083814,10083814,10083815'
+}
+
+};
+
+if(typeof talk99Init == 'function'){
+talk99Init(doyoo);
+}
+if(!document.getElementById('doyoo_panel')){
+var supportJquery=typeof jQuery!='undefined';
+var doyooWrite=function(html){
+document.writeln(html);
+}
+
+doyooWrite('<div id="doyoo_panel"></div>');
+
+
+doyooWrite('<div id="doyoo_monitor"></div>');
+
+
+doyooWrite('<div id="talk99_message"></div>')
+
+doyooWrite('<div id="doyoo_share" style="display:none;"></div>');
+doyooWrite('<lin'+'k rel="stylesheet" type="text/css" href="'+schema+'://aux.soperson.com/131221/oms.css?181204"></li'+'nk>');
+doyooWrite('<scr'+'ipt type="text/javascript" src="'+schema+'://aux.soperson.com/131221/oms.js?190601" charset="utf-8"></scr'+'ipt>');
+}
+}
